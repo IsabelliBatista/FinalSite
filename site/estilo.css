@@ -92,28 +92,28 @@ body{
 }
 .ti{
 	font-size: 43px;
-    font-family: Raleway Light;
+    font-family: Raleway;
     margin: 0px;
     padding: 40px;
     text-align: center;
 }
 .tu{
     font-size: 140px;
-    font-family: Poppins black;
+    font-family: Poppins;
     padding: 0;
     margin: -70px;
     text-align: center;
 }
 .lo{
     font-size: 70px;
-    font-family: Raleway Black;
+    font-family: Raleway;
     padding: 0;
     margin: 33px 60px;
     text-align: inherit;
 }
 .tit{
     font-size: 35px;
-    font-family: Raleway Light;
+    font-family: Raleway;
     width: 200px;
     text-align: center;
     padding: 0;
@@ -122,7 +122,7 @@ body{
 }
 .Elipse2 h2{
 	font-size: 26px;
-    font-family: Raleway Light;
+    font-family: Raleway;
     width: 200px;
     padding: 10px;
     margin: 0;
@@ -898,7 +898,7 @@ label{
 	text-transform: uppercase;
     font-size: 15px;
     margin: 15px 0;
-    font-weight: 800;
+    font-weight: 700;
 }
 .itens-footer h6{
     color: #8c9095;
@@ -1106,14 +1106,14 @@ label{
         width: 105px;
         position: absolute;
         left: 22px;
-        bottom: 43px;
+        bottom: 33px;
 
     }
     .Elipse2 .button{
         width: 88px;
         height: 23px;
         padding: 2px 10px;
-        font-size: 13px;
+        font-size: 12px;
         position: absolute;
         left: 30px;
         bottom: 19px;
