@@ -54,7 +54,7 @@ body{
    border-bottom: 2px solid #000;
 }
 .contact-menu h4{
-    font-weight: 500;
+    font-weight: bold;
     margin: 25px 0 5px;
     font-size: 13px;
 }
