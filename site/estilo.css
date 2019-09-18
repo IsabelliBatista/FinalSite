@@ -660,17 +660,18 @@ label{
     font-size: 16px;
 }
 .bloco-section{
-    width: 916px;
+    width: 750px;
     border: 1px solid #ffffff;
     color: #ffffff;
     border-radius: 22px;
     font-size: 15px;
+    padding: 0 30px;
     line-height: 1.7;
     display: flex;
     justify-content: space-evenly;
 }
 .bloco-section p{
-   width: 445px;
+   width: 465px;
 }
 .bloco-section p:nth-child(2){
     width: 405px;
@@ -1387,11 +1388,13 @@ label{
         margin: 0;
 }
     .bloco-section {
-        width: 450px;
+        width: 400px;
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin: 15px;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 13px;
     }
     .bloco-section p {
         width: 445px;
