@@ -87,12 +87,11 @@ body{
 }
 .banner h1, h2{
 	color: #0e3893;
-    font-weight: 800;
-
 }
 .ti{
 	font-size: 43px;
     font-family: Raleway;
+    font-weight: 600;
     margin: 0px;
     padding: 40px;
     text-align: center;
@@ -100,6 +99,7 @@ body{
 .tu{
     font-size: 140px;
     font-family: Poppins;
+    font-weight: 800;
     padding: 0;
     margin: -70px;
     text-align: center;
@@ -108,11 +108,13 @@ body{
     font-size: 70px;
     font-family: Raleway;
     padding: 0;
+    font-weight: 800;
     margin: 33px 60px;
     text-align: inherit;
 }
 .tit{
     font-size: 35px;
+    font-weight: 600;
     font-family: Raleway;
     width: 200px;
     text-align: center;
