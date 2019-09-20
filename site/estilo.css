@@ -70,6 +70,7 @@ body{
 	height: 67px;
 	margin: 15px 0;
 }
+
 .Elipse1{
 	background-image: url(images/Elipse1.png);
     height: 348px;
@@ -224,6 +225,16 @@ body{
 }
 .txt-ul-nav li:nth-child(4){
    margin: 0 0 0 -20px;
+}
+li .carousel-control-next, .carousel-control-prev{
+    width: 100%;
+}
+li .carousel-control-next-icon{
+    background: transparent;
+}
+.ul-nav li:hover{
+    background-color: #ccc;
+
 }
 .ul-nav{
 	list-style: none;
@@ -905,19 +916,33 @@ label{
 .ul-footer li{
     margin: 0 15px;
 }
-.dropdown{
-    display: none;
-}
+
 @media  (max-width: 900px){
-    .dropdown{
-        display: block;
-    }
-    .menu{
-        justify-content: space-around;
+    .menu {
+        height: 325px;
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: end;
     }
-    .menu .menu-ul{
-        display: none;
+    .menu img {
+        margin: 15px;
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu ul li {
+        padding: 0 10px;
+        width: 480px;
+        padding: 9px 0;
+        background-color: #24385f;
+        color: #fff;
+        text-align: center;
+    }
+    .menu ul li:hover{
+        background-color: #e4e5e1;
+        color: #000;
     }
     .contact-menu{
         display: none;
