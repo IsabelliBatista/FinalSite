@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="estilo.css">
+    <link href="css/normalize.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900|Raleway:400,700,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -19,15 +20,29 @@
 			<div class="bloco-banner">
 				<div class="menu">
 					<img src="images/Camada 20.png">
-					<ul>
-						<!--<li onclick="scrollWin(0, 6800)">Quem somos</li>-->
-						<li class="quemsomos">Quem somos</li>
-						<li class="funciona">como funciona</li>
-						<li class="servicos">serviços</li>
-						<li class="direito">quem tem direito</li>
-						<li class="veiculos">veículos</li>
-						<li class="contato">contato</li>
-					</ul>
+					<ul class="menu-ul">
+							<!--<li onclick="scrollWin(0, 6800)">Quem somos</li>-->
+							<li class="quemsomos">Quem somos</li>
+							<li class="funciona">como funciona</li>
+							<li class="servicos">serviços</li>
+							<li class="direito">quem tem direito</li>
+							<li class="veiculos">veículos</li>
+							<li class="contato">contato</li>
+						</ul>
+					<div class="dropdown">
+					    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					        x
+					    </a>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<!--<li onclick="scrollWin(0, 6800)">Quem somos</li>-->
+							<li class="quemsomos">Quem somos</li>
+							<li class="funciona">como funciona</li>
+							<li class="servicos">serviços</li>
+							<li class="direito">quem tem direito</li>
+							<li class="veiculos">veículos</li>
+							<li class="contato">contato</li>
+						</ul>
+					</div>
 					<div class="contact-menu">
 						<h4>central de atendimento</h4>
 						<h2>(13) 3222-3722</h2>
@@ -538,10 +553,13 @@
 					</form>
 					</div>
 				<div class="mapa">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14585.644624995723!2d-46.3298455!3d-23.9458969!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2c2a9d8395dceca3!2zRnJlZSBJc2Vuw6fDtWVz!5e0!3m2!1spt-PT!2sbr!4v1566431931467!5m2!1spt-PT!2sbr" width="700" height="568" frameborder="0" style="border:0" allowfullscreen class="maps-hidden"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14585.644624995723!2d-46.3298455!3d-23.9458969!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2c2a9d8395dceca3!2zRnJlZSBJc2Vuw6fDtWVz!5e0!3m2!1spt-PT!2sbr!4v1566431931467!5m2!1spt-PT!2sbr" width="700px" height="568" frameborder="0" style="border:0" allowfullscreen class="maps-hidden"></iframe>
 				</div>
 				<div class="mapa-hidden">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14585.644624995723!2d-46.3298455!3d-23.9458969!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2c2a9d8395dceca3!2zRnJlZSBJc2Vuw6fDtWVz!5e0!3m2!1spt-PT!2sbr!4v1566431931467!5m2!1spt-PT!2sbr" width="480" height="568" frameborder="0" style="border:0" allowfullscreen class="maps-hidden"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14585.644624995723!2d-46.3298455!3d-23.9458969!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2c2a9d8395dceca3!2zRnJlZSBJc2Vuw6fDtWVz!5e0!3m2!1spt-PT!2sbr!4v1566431931467!5m2!1spt-PT!2sbr" width="483px" height="500" frameborder="0" style="border:0" allowfullscreen class="maps-hidden"></iframe>
+				</div>
+				<div class="mapa-hidden-mb">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14585.644624995723!2d-46.3298455!3d-23.9458969!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2c2a9d8395dceca3!2zRnJlZSBJc2Vuw6fDtWVz!5e0!3m2!1spt-PT!2sbr!4v1566431931467!5m2!1spt-PT!2sbr" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen class="maps-hidden"></iframe>
 				</div>
 			</div>
 		</div>

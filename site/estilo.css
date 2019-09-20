@@ -25,7 +25,7 @@ body{
 	position: relative;
 }
 .menu{
-   height: 134px;
+    height: 100px;
     display: flex;
     width: 100%;
     background-color: #e4e5e1;
@@ -33,7 +33,8 @@ body{
     text-transform: uppercase;
     font-family: Poppins;
     color: #434343;
-    position: absolute;
+    position: fixed;
+    z-index: 3;
     top: 0px;
     left: 0px;
 }
@@ -67,7 +68,7 @@ body{
 .menu img{
 	width: 155px;
 	height: 67px;
-	margin: 30px 0;
+	margin: 15px 0;
 }
 .Elipse1{
 	background-image: url(images/Elipse1.png);
@@ -133,8 +134,7 @@ body{
     font-weight: bold;
 }
 .Elipse2 .button{
-    width: 105px;
-    height: 25px;
+    padding: 0px 15px;
     font-size: 17px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -170,7 +170,6 @@ body{
     font-size: 18px;
     font-family: Poppins;
     color: #ffffff;
-    width: 845px;
     text-transform: uppercase;
 }
 .item{
@@ -346,7 +345,6 @@ body{
 }
 .bloco1 h3{
 	font-size: 24px;
-    width: 178px;
     font-weight: bold;
     color: #696969;
     margin: 0;
@@ -355,9 +353,8 @@ body{
 .bloco1 p{
     color: #000000;
     text-align: inherit;
-    width: 420px;
     font-size: 15px;
-    margin: 10px 0px 20px;
+    margin: 10px 10px 10px 0;
 
 }
 .button-main{
@@ -394,7 +391,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    padding: 0 60px 0 0;
+    padding: 0 30px 0 0;
     box-sizing: border-box;
 
 }
@@ -410,10 +407,8 @@ body{
 .bloco2 p{
     color: #000000;
     text-align: end;
-    width: 420px;
     font-size: 15px;
-    margin: 10px 0px 20px;
-
+    margin: 10px 0px 10px 15px;
 }
 .bloco3-main{
     display: flex;
@@ -448,10 +443,8 @@ body{
 .bloco3 p{
     color: #000000;
     text-align: inherit;
-    width: 420px;
     font-size: 15px;
-    margin: 10px 0px 20px;
-
+    margin: 10px 20px 10px 0;
 }
 .bloco4-main{
     display: flex;
@@ -471,7 +464,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    padding: 0 60px 0 0;
+    padding: 0 30px 0 0;
     box-sizing: border-box;
 
 }
@@ -488,10 +481,8 @@ body{
 .bloco4 p{
     color: #000000;
     text-align: end;
-    width: 420px;
     font-size: 15px;
-    margin: 10px 0px 20px;
-
+    margin: 10px 0px 10px 15px;
 }
 .main-itens{
     display: flex;
@@ -511,7 +502,6 @@ body{
 .txt-item p{
 	color: #000000;
     font-size: 15px;
-    width: 211px;
     text-align: left;
     margin: 0 0 17px 0;
 }
@@ -656,8 +646,8 @@ label{
 }
 .item-section p{
     font-weight: bold;
-    width: 354px;
     font-size: 16px;
+    margin: 20px 20px 20px 0;
 }
 .bloco-section{
     width: 750px;
@@ -741,8 +731,8 @@ label{
     text-transform: uppercase;
 }
 .item-somos p{
-    width: 1000px;
-    margin: 0 auto;
+    text-align: center;
+    margin: 25px;
 }
 .somos{
     text-align: center;
@@ -752,7 +742,7 @@ label{
 }
 .line-somos{
     background-color: #fff;
-    width: 1100px;
+    width: 96%;
     height: 1px;
     margin: 20px auto;
 }
@@ -772,11 +762,15 @@ label{
     display: flex;
     justify-content: center;
 }
+.icons-contact img{
+    width: 161px;
+    height: 67px;
+}
 .icons-contact{
     margin: 60px 0;
 }
 .icons-contact h3{
-    padding: 15px 30px;
+    padding: 10px;
 }
 .icons-contact a{
     color: #fff;
@@ -802,7 +796,7 @@ label{
 }
 .maps{
 	height: 568px;
-	width: 1140px;
+	/*width: 1140px;*/
 	background-color: #ffffff;
     margin: 40px 0;
     display: flex;
@@ -814,8 +808,7 @@ label{
 
 }
 .form-maps{
-    width: 485px;
-    margin: 25px 0;
+    margin: 30px;
 }
 .maps fieldset{
 	display: flex;
@@ -867,23 +860,23 @@ label{
 }
 .bloco-footer{
     display: flex;
-	    flex-direction: row;
+	flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
-    margin: 30px 0 0;
+    justify-content: space-around;
+    margin: 0;
 }
 .itens-footer{
 	display: flex;
 }
 .item1-footer{
-    padding: 0 0 0 100px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 .item1-footer h5, h6{
     margin: 0;
-		padding: 0;
+	padding: 0;
 }
 .bloco-footer img, .menu img{
 	width: 155px;
@@ -912,159 +905,114 @@ label{
 .ul-footer li{
     margin: 0 15px;
 }
-@media (min-width: 700px) and (max-width: 900px){
-    .menu ul li{
-        font-size: 12px;
+.dropdown{
+    display: none;
+}
+@media  (max-width: 900px){
+    .dropdown{
+        display: block;
     }
-    .cancel{
-        display: none;
+    .menu{
+        justify-content: space-around;
+        align-items: center;
     }
-    .cancel-mb{
+    .menu .menu-ul{
         display: none;
     }
     .contact-menu{
         display: none;
     }
-    .Elipse2{
-        margin: auto 0;
+    .nav {
+        height: 630px;
     }
-    .header-sub p{
-        width: 675px;
+    .btn-secondary:hover {
+        color: #fff;
+        font-size: 22px;
     }
-    .tit-p-nav img {
-        right: -10px;
+    .txt-ul-nav li:nth-child(1) {
+        margin: 0 -65px;
     }
-    .nav{
-        height: 600px;
+    .txt-ul-nav li:nth-child(2) {
+        margin: 0 0 0 64px;
     }
-    .item-main {
-        height: 418px;
-        width: 325px;
+    .txt-ul-nav li:nth-child(3) {
+        margin: 0 0 0 15px;
     }
-    .item-main img {
-        width: 325px;
+    .txt-ul-nav li:nth-child(4) {
+        margin: 0 0 0 30px;
     }
-    .txt-item h4 {
-        margin: 10px 0;    
-     }
-    .txt-item p {
-        width: 211px;
-        margin: 0 0 17px 0;
+    .txt-ul-nav{
+        text-align: center;
+    }
+    .tit-p-nav img{
+        right: 1px;
     }
     .section {
-        height: 1300px;
+        height: 1545px;
     }
     .section-block {
-        display: flex;
         flex-direction: column;
+        align-items: center;
     }
-    .bloco-section {
-        width: 715px;
-        padding: 0 10px;
+    .item-section{
+        align-items: center;
+        text-align: center;
     }
-    .item-section {
-        display: flex;
-        flex-direction: row;
+    .item-main {
+        width: 220px;
     }
-    .item-article {
-        width: 325px;
+    .item-main img {
+        width: 220px;
+    }
+    .txt-item h4 {
+        margin: 26px -22px;
     }
     .article {
-        height: 530px;
+        height: 500px;
     }
-    .item-somos p {
-        width: 600px;
+    .item-article {
+        width: 220px;
     }
-    .line-somos {
-        width: 700px;
-    }
-    .maps {
-        height: 1105px;
-        width:700px;
-        margin: 40px 0;
-        flex-direction: column;
+    .item-article img{
+        width: 220px;
+        height: 150px;
     }
     .contact {
-        height: 3040px;
+        height: 3160px;
     }
-    .form-maps {
-        width: 485px;
-        margin: 25px auto;
-    }
-    .maps legend {
-        text-align: center;
-    }
-    .bloco-footer {
+    .maps {
+        height: 1037px;
+        width: 70%;
+        margin: 20px auto;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        margin: 30px 0 0;
     }
     .item1-footer {
-        padding: 10px 0px 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 250px;
+        padding: 20px 10px;
     }
-    .icons-footer ul {
-        justify-content: center;
+    .mapa{
+        display: none;
     }
-
+    .mapa-hidden{
+        display: block;
+        overflow: visible;
+    }
+    .mapa-hidden-mb{
+        display: none;
+    }
 }
-@media (max-width: 480px){
-    .container{
-        padding: 0;
-        margin: 0;
-    }
-    .cancel{
-        display: none;
-    }
-    .cancel-mb{
-        display: none;
-    }
-    .banner{
-        width: 480px;
-        height: 760px;
-        background-position-x: center;
-        background-size: auto;
-    }
-    .menu {
-        height: 325px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: end;
-    }
-    .menu img {
-        margin: 15px;
-    }
-    .menu ul {
-        display: flex;
-        flex-direction: column;
-    }
-    .menu ul li {
-        padding: 0 10px;
-        width: 480px;
-        padding: 9px 0;
-        background-color: #24385f;
-        color: #fff;
-        text-align: center;
-    }
-    .menu ul li:hover{
-        background-color: #e4e5e1;
-        color: #000;
-    }
-    .contact-menu{
-        display: none;
+@media (max-width: 400px){
+    .banner {
+        height: 580px;
+        background-position: center;
     }
     .Elipse1{
         height: 200px;
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
-        right: 47px;
+        right: 10px;
+        top: 160px;
         padding: 0;
         width: 249px;
     }
@@ -1073,7 +1021,7 @@ label{
         background-repeat: no-repeat;
         background-size: contain;
         position: absolute;
-        right: -17px;
+        right: -70px;
         width: 205px;
         bottom: 55px;
     }
@@ -1113,309 +1061,103 @@ label{
 
     }
     .Elipse2 .button{
-        width: 88px;
-        height: 23px;
-        padding: 2px 10px;
-        font-size: 12px;
+        bottom: 32px;
+        left: 18px;
         position: absolute;
-        left: 30px;
-        bottom: 19px;
     }
     .header{
-        width: 480px;
+        height: 1270px;
     }
-    .header-sub h1 {
-        padding: 58px 30px 20px;
-        margin: 0;
-        font-size: 20px;
+    .nav {
+        height: 697px;
     }
-    .header-sub p {
-        margin: 0px 0 0 30px;
-        font-size: 16px;
-        width: 416px;
+    .titulo-nav {
+        font-size: 31px;
     }
-    .item-txt h3 {
-        font-size: 16px;
-        width: 260px;
-        margin: 20px 0px;
+    .txt-ul-nav {
+        text-align: center;
+        font-size: 11px;
+        display: flex;
+        align-items: center;
     }
-    .item-txt p {
-        margin: -15px 0;
-        font-size: 16px;
-        width: 270px;
+    .txt-ul-nav li:nth-child(1) {
+        margin: 0 -65px;
     }
-    .nav{
-        height: 530px;
-        width: 480px;
+    .txt-ul-nav li:nth-child(4) {
+        margin: 0 0 0 17px;
     }
     .tit-p-nav h2 {
         padding: 0;
         margin: 0;
-        text-align: center;
     }
     .tit-p-nav img {
         position: absolute;
-        left: 255px;
+        left: 200px;
         width: 140px;
     }
     .tit-p-nav p {
         font-size: 13px;
-        width: 262px;
-    }
-    .item .ob1{
-        margin: 30px 22px 0 32px;  
-    }
-    .titulo-nav {
-        font-size: 25px;
-        width: 350px;
-        margin: 40px 75px;
-        text-align: center;
-    }
-    .txt-ul-nav {
-        font-size: 11px;
-        justify-content: inherit;
-        margin: 15px 0;
-    }
-    .txt-ul-nav li:nth-child(1) {
-        margin: 0 0 0 -32px;
-        font-size: 9px;
-    }
-
-    .txt-ul-nav li:nth-child(2)  {
-        margin: 0px 0 0 12px;
-        width: 81px;
-        text-align: center;
-    }
-    .txt-ul-nav li:nth-child(3) {
-        margin: 0 0 0 27px;
-        width: 63px;
-        text-align: center;
-    }
-    .txt-ul-nav li:nth-child(4) {
-        margin: 0 0 0 28px;
-        text-align: center;
-    }
-   .txt-ul-nav li:nth-child(5){
-        margin: 0 22px;
-        text-align: center;
-    }
-    .ul-nav li {
-        width: 35px;
-        height: 35px;
-        font-size: 23px;
-        margin: 0 20px;
-    }
-    .ul-nav {
-        list-style: none;
-        display: flex;
-        justify-content: inherit;
-    }
-    .ul-nav:after {
-        content: '';
-        height: 2px;
-        left: 30px;
-        width: 400px;
-        background: #ccc;
-        top: 20px;
-        z-index: 0;
-        position: absolute;
-    }
-    .nav-txt {
-        display: flex;
-        align-items: center;
-        margin: 40px -85px;
+        width: 200px;
     }
     .tit-p-nav {
         display: flex;
         flex-direction: column;
-        align-items: normal;
+        align-items: center;
         margin: 25px;
     }
-    .main{
-        width: 480px;
-        height: 4000px;
-    }
-    .main h2 {
-        padding: 40px 0px 0;
-        text-align: center;
-    }
-    .main .p {
-        text-align: center;
-        width: 272px;
-        margin: 0 95px 10px;
-    }
-    .main p:nth-child(1) {
-        margin: 0 0 30px 105px;
-        width: 250px;
-        text-align: center;
-    }
-    .bloco1-main {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    .bloco2-main {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: flex-end;
-    }
-    .bloco3-main {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    .bloco4-main {
-        align-items: flex-end;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .img-bloco1{
-        width: 480px;
-    }
-    .img-bloco2{
-        width: 480px;
+    .bloco1, .bloco2, .bloco3, .bloco4{
+        padding: 20px;
     }
     .img-bloco3{
-        width: 480px;
-    }
-    .img-bloco4{
-        width: 480px;
-    }
-    .main-itens {
-        display: flex;
-        flex-direction: column;
-        margin: 0px 80px;
-    }
-    .item-main {
-        height: 418px;
-        width: 325px;
-        background: #ffffff;
-        margin: 11px 0;
-    }
-    .bloco1, .bloco2, .bloco3, .bloco4{
-        width: 480px;
-    }
-    .article {
-        height: 520px;
-    }
-    .article-itens {
-        display: flex;
-        flex-direction: column;
-        margin: 0px 80px;
-    }
-    .article h2 {
-        text-align: center;
-        margin: 50px 0;
-    }
-    .contact {
-        height: 3500px;
-        margin: 0;
-        padding: 0;
-
-    }
-    .somos {
-        margin: 0;
-        padding: 60px 0px 20px;
-    }
-    .item-somos h1 {
-        width: 326px;
-        text-align: center;
-        margin: 0 60px;
-    }
-    .item-somos p {
-        width: 420px;
-        text-align: center;
-        margin: 0;
-    }
-    .contact h2 {
-        text-align: center;
-        padding: 40px 0px;
-        margin: 0;
-        width: 430px;
-    }
-    .line-somos {
-        width: 416px;
-        margin: 20px 0;
-    }
-    .icons-contact {
-        margin: 60px 0;
-        font-size: 12px;
-        align-items: center;
-        justify-content: end;
-    }
-    .icons-contact h3{
-        font-size: 15px;
-        text-align: center;
-    }
-    .tit-sub-contact h1 {
-        margin: 0;
-    }
-    .tit-sub-contact h2 {
-        margin: 0;
-        text-align: center;
-    }
-    .form-maps {
-        width: 465px;
-    }
-    .maps {
-        height: 1115px;
-        width: 465px;
-        margin: 40px 0;
-        flex-direction: column;
-    }
-    .mapa{
-        overflow: hidden;
         display: none;
     }
-    .mapa-hidden{
-        display:block;  
-
+    .cancel-mb, .cancel{
+        display: none;
     }
     .section {
-        height: 2260px;
-        width: 480px;
+        height: 2100px;
     }
-    .section-block {
-        display: flex;
-        flex-direction: column;
-    }
-    .item-section {
-        flex-direction: column;
-        padding: 55px 80px;
-    }
-    .section h2 {
-        text-align: center;
-        margin: 0;
-}
     .bloco-section {
-        width: 400px;
+        width: 360px;
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
         margin: 0 auto;
-        font-size: 13px;
+        font-size: 12px;
     }
     .bloco-section p {
-        width: 445px;
-        margin: 14px 3px;
+        width: 343px;
+        margin: 0;
     }
-    .footer{
-        width: 480px;
+    .bloco-section p:nth-child(2) {
+        width: 343px;
     }
-    .bloco-footer {
+    .contact{
+        height: 3530px;
+    }
+    .maps {
+        width: 100%;
+    }
+    .mapa-hidden{
+        display: none;
+    }
+    .mapa-hidden-mb{
+        display: block;
+        overflow: visible;
+    }
+     .bloco-footer {
         display: flex;
         flex-direction: column;
         margin: 31px 0 0;
         align-items: end;
     }
     .bloco-footer img{
-        margin: 0 180px 10px;
+        margin: 0 auto;
     }
     .itens-footer {
         display: flex;
-        flex-direction: row-reverse;
-        margin: 16px 0;
+        margin: 16px -2px;
     }
     .item1-footer {
         padding: 0 0 0 25px;
@@ -1434,4 +1176,5 @@ label{
     .icons-footer ul {
         justify-content: flex-start;
     }
+
 }
