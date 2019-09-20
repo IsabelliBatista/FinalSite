@@ -916,25 +916,65 @@ label{
 .ul-footer li{
     margin: 0 15px;
 }
-
+i{
+    display: none;
+}
+nav .menu-ul{
+    display: none;
+}
+.menu-mb{
+    display: none;
+}
 @media  (max-width: 900px){
     .menu {
-        height: 325px;
+        height: 115px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: end;
     }
     .menu img {
-        margin: 15px;
+        margin: 7px;
     }
     .menu ul {
         display: flex;
         flex-direction: column;
+        position: absolute;
+        display: contents;
+        list-style: none;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        border-radius:3px;
+        opacity:0;
+    }
+    i {
+        display: block;
+        padding:5px;
+        border-radius:3px;
+        color:#000;
+        transition:.25s;
+        animation: 1.25s bounce infinite;
+        position: absolute;
+        top: 37px;
+        right: 237px;
+    }
+    i:hover {
+        cursor:pointer;
+        background: rgba(255,255,255,.95);
+        animation-play-state: paused;
+    }
+    .menu ul.open {
+        max-height: 480px;
+        visibility: visible;
+        opacity:1;
+        transform:rotate(0);
     }
     .menu ul li {
+        display: block;
         padding: 0 10px;
-        width: 480px;
+        width: 100%;
         padding: 9px 0;
         background-color: #24385f;
         color: #fff;
@@ -944,6 +984,7 @@ label{
         background-color: #e4e5e1;
         color: #000;
     }
+
     .contact-menu{
         display: none;
     }
