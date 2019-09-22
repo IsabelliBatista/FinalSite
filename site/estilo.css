@@ -65,7 +65,7 @@ body{
     color: #434343;
     padding: 0;
 }
-.menu img{
+.menu-img{
 	width: 155px;
 	height: 67px;
 	margin: 15px 0;
@@ -889,7 +889,7 @@ label{
     margin: 0;
 	padding: 0;
 }
-.bloco-footer img, .menu img{
+.bloco-footer img, .menu-img{
 	width: 155px;
 	height: 67px;
 }
@@ -933,8 +933,8 @@ nav .menu-ul{
         align-items: center;
         justify-content: end;
     }
-    .menu img {
-        margin: 7px;
+    .menu-img {
+        margin: 24px;
     }
     .menu ul {
         display: flex;
@@ -953,7 +953,6 @@ nav .menu-ul{
         display: block;
         padding:5px;
         border-radius:3px;
-        color:#000;
         transition:.25s;
         animation: 1.25s bounce infinite;
         position: absolute;
@@ -962,8 +961,11 @@ nav .menu-ul{
     }
     i:hover {
         cursor:pointer;
-        background: rgba(255,255,255,.95);
         animation-play-state: paused;
+    }
+    .img-i{
+        width: 26px;
+        height: 26px;
     }
     .menu ul.open {
         max-height: 480px;
@@ -1068,6 +1070,9 @@ nav .menu-ul{
     }
 }
 @media (max-width: 400px){
+    i{
+        right: 52px;
+    }
     .banner {
         height: 580px;
         background-position: center;
