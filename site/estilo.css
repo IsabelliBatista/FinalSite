@@ -23,6 +23,7 @@ body{
 	display: flex;
 	align-items: center;
 	position: relative;
+    -webkit-overflow-scrolling: touch;
 }
 .menu{
     height: 100px;
@@ -923,6 +924,9 @@ nav .menu-ul{
     display: none;
 }
 .menu-mb{
+    display: none;
+}
+.mapa-hidden-mb{
     display: none;
 }
 @media  (max-width: 900px){
