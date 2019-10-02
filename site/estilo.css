@@ -253,6 +253,20 @@ li .carousel-control-next-icon{
     top: 26px;
     z-index: 0;
     position: absolute;
+    -webkit-content: '';
+    -webkit-height: 2px;
+    -webkit-width: 100%;
+    -webkit-background: #ccc;
+    -webkit-top: 26px;
+    -webkit-z-index: 0;
+    -webkit-position: absolute;
+    -ms-content: '';
+    -ms-height: 2px;
+    -ms-width: 100%;
+    -ms-background: #ccc;
+    -ms-top: 26px;
+    -ms-z-index: 0;
+    -ms-position: absolute;
 }
 .ul-nav li{
     font-family: Poppins;
@@ -360,6 +374,7 @@ li .carousel-control-next-icon{
     font-weight: bold;
     color: #696969;
     margin: 0;
+    text-transform: uppercase;
     padding: 0;
 }
 .bloco1 p{
@@ -495,6 +510,8 @@ li .carousel-control-next-icon{
     text-align: end;
     font-size: 15px;
     margin: 10px 0px 10px 15px;
+    -webkit-margin: 10px 0px 10px 15px;
+    -ms-margin: 10px 0px 10px 15px;
 }
 .main-itens{
     display: flex;
@@ -544,11 +561,17 @@ li .carousel-control-next-icon{
     background-color: #eeeeee;
     display: flex;
     align-items: center;
+
 }
 form{
-    display: flex;
     flex-direction: column;
     align-items: center;
+    -webkit-display: flex;
+    -webkit-flex-direction: column;
+    -webkit-align-items: center;
+    -ms-display: flex;
+    -ms-flex-direction: column;
+    -ms-align-items: center;
 }
 .form legend{
     color: #55595e;
@@ -642,6 +665,11 @@ label{
 }
 .section-block{
     display: flex;
+    -webkit-display: flex;
+    -ms-display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+
 }
 
 .item-section{
@@ -823,7 +851,8 @@ label{
     margin: 30px;
 }
 .maps fieldset{
-	display: flex;
+	-webkit-display: flex;
+    -ms-display: flex;
 }
 .maps legend{
 	color: #55595e;
