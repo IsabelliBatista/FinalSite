@@ -251,7 +251,7 @@ li .carousel-control-next-icon{
     width: 100%;
     background: #ccc;
     top: 26px;
-    z-index: 0;
+    /*z-index: 0;*/
     position: absolute;
     -webkit-content: '';
     -webkit-height: 2px;
@@ -674,9 +674,12 @@ label{
 
 .item-section{
     color: #ffffff;
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
     padding: 55px 0;
+    display: inline-block;
+    width: 30%;
+}
 }
 .item-section h4{
 	font-style: italic;
@@ -849,6 +852,9 @@ label{
 }
 .form-maps{
     margin: 30px;
+    display: inline-block;
+    width: 40%;
+    text-align: center;
 }
 .maps fieldset{
 	-webkit-display: flex;
@@ -1101,6 +1107,9 @@ nav .menu-ul{
     .mapa-hidden-mb{
         display: none;
     }
+    .form-maps {
+        width: 85%;
+    }
 }
 @media (max-width: 400px){
     i{
@@ -1242,6 +1251,10 @@ nav .menu-ul{
     }
     .maps {
         width: 100%;
+    }
+    .contact .form-maps{
+        margin: 15px;
+        box-sizing: border-box;
     }
     .mapa-hidden{
         display: none;
