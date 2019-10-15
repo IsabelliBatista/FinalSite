@@ -1064,6 +1064,10 @@ nav .menu-ul{
     .item-section{
         align-items: center;
         text-align: center;
+        width: 100%;
+    }
+    .form{
+        margin: 0 auto;
     }
     .item-main {
         width: 220px;
